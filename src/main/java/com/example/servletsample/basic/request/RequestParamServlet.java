@@ -28,7 +28,7 @@ public class RequestParamServlet extends HttpServlet {
         System.out.println();
 
         System.out.println("getParameterValues Test");
-        String[] hobbies = req.getParameterValues("hobby");
+        String[] hobbies = req.getParameterValues("id");
         Stream<String> stream = Arrays.stream(hobbies);
         stream.forEach(System.out::println);
         System.out.println();
